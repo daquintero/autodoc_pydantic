@@ -1,5 +1,108 @@
 # Changelog
 
+## [2.1.1](https://github.com/daquintero/autodoc_pydantic/compare/v2.1.0...v2.1.1) (2024-03-27)
+
+
+### 🐛 Bug Fixes
+
+* 176 - Remove ``sphinxcontrib/__init__.py` causing ``ModuleNotFoundError`` exception in some environments.  This should be a namespace package per `PEP 420 &lt;https://peps.python.org/pep-0420/&gt;`__ without ``__init_.py`` to match with other extensions. ([57e0622](https://github.com/daquintero/autodoc_pydantic/commit/57e0622135a69a040a03dfcb6a884cf357b80ede))
+* **deps:** update dependency erdantic to ^0.7.0 ([#226](https://github.com/daquintero/autodoc_pydantic/issues/226)) ([0909963](https://github.com/daquintero/autodoc_pydantic/commit/09099635fdbd0675cf4f3a3e4da7db1b3a3fe2eb))
+* **deps:** update dependency flake8 to v7 ([#233](https://github.com/daquintero/autodoc_pydantic/issues/233)) ([c270e8a](https://github.com/daquintero/autodoc_pydantic/commit/c270e8ae447f9c65659f1d718c458f768c91be6b))
+* **deps:** update dependency pytest to v8 ([#234](https://github.com/daquintero/autodoc_pydantic/issues/234)) ([8b330af](https://github.com/daquintero/autodoc_pydantic/commit/8b330af0905ea91439a0ed0ff23d8512eb1445b6))
+* **deps:** update dependency sphinx-copybutton to ^0.5.0 ([#227](https://github.com/daquintero/autodoc_pydantic/issues/227)) ([7ada937](https://github.com/daquintero/autodoc_pydantic/commit/7ada937a62da35f7715edf3b5e2a441075cc6457))
+* **deps:** update dependency sphinx-rtd-theme to v2 ([#235](https://github.com/daquintero/autodoc_pydantic/issues/235)) ([f43cfa9](https://github.com/daquintero/autodoc_pydantic/commit/f43cfa914a9eb7d74ea66c588f124c3aed3a315f))
+* **deps:** update dependency sphinxcontrib-mermaid to ^0.9.0 ([#229](https://github.com/daquintero/autodoc_pydantic/issues/229)) ([984ce05](https://github.com/daquintero/autodoc_pydantic/commit/984ce051e3dba7f2ecf267662ecb8cfdd4411ae3))
+* RemovedInSphinx80Warning: The tuple interface of ObjectMember is deprecated. Use (obj.__name__, obj.object) instead ([b5cf6f7](https://github.com/daquintero/autodoc_pydantic/commit/b5cf6f7571ef1c30666dd1f196787aa0944ba808))
+* Test please-release ([d4595bf](https://github.com/daquintero/autodoc_pydantic/commit/d4595bf403ce0f85a23572397c0f12bffb68f3ef))
+
+
+### ⛏ Other Changes
+
+* Add `changelog-sections` to please-release ([#218](https://github.com/daquintero/autodoc_pydantic/issues/218)) ([5355f98](https://github.com/daquintero/autodoc_pydantic/commit/5355f98d77c5b0fe94358f4109d22d89a1eaedf2))
+* add classifier for filtering on sphinx + pydantic ([0a69b10](https://github.com/daquintero/autodoc_pydantic/commit/0a69b100cceb6e3fa77ceac16173c250736f54e2))
+* Add Coduim PR Agent Workflow ([#236](https://github.com/daquintero/autodoc_pydantic/issues/236)) ([38f9e16](https://github.com/daquintero/autodoc_pydantic/commit/38f9e16525904223be867d6799a880e9aae16d95))
+* Configure Renovate ([#225](https://github.com/daquintero/autodoc_pydantic/issues/225)) ([efc2f9a](https://github.com/daquintero/autodoc_pydantic/commit/efc2f9aefec73d6f6cfa8fe521e8eca4406fc148))
+* Deactivate dependency dashboard ([#238](https://github.com/daquintero/autodoc_pydantic/issues/238)) ([11afaf3](https://github.com/daquintero/autodoc_pydantic/commit/11afaf39160d1ad628b08dc3fc1024af6c396235))
+* **deps:** update abatilo/actions-poetry action to v3 ([#230](https://github.com/daquintero/autodoc_pydantic/issues/230)) ([be248a4](https://github.com/daquintero/autodoc_pydantic/commit/be248a466885393c9e1420ecff60b64ce9132d0c))
+* **deps:** update actions/checkout action to v4 ([#231](https://github.com/daquintero/autodoc_pydantic/issues/231)) ([5774bdf](https://github.com/daquintero/autodoc_pydantic/commit/5774bdf6340500a362709afdf8814efcfaea4d6a))
+* **deps:** update actions/setup-python action to v5 ([#232](https://github.com/daquintero/autodoc_pydantic/issues/232)) ([2bc973b](https://github.com/daquintero/autodoc_pydantic/commit/2bc973b9704b2dab6c9122eee15930a4f7deecce))
+* **examples:** Typo ([908e323](https://github.com/daquintero/autodoc_pydantic/commit/908e323abca24b837bd66bf850916cb78d6f16e2))
+* improve changelog ([b22840f](https://github.com/daquintero/autodoc_pydantic/commit/b22840f1095cf82256a56d9fb2f27bd1710dae6c))
+* Remove `dev` extras and `tox` from pyproject.toml ([204f246](https://github.com/daquintero/autodoc_pydantic/commit/204f24669d643505edb7be4acf07a856948e5027))
+
+
+### 📖 Documentation
+
+* Add missing erdantic version number ([#224](https://github.com/daquintero/autodoc_pydantic/issues/224)) ([4c9c6b2](https://github.com/daquintero/autodoc_pydantic/commit/4c9c6b2031734ace78b8fe61db26b940ebd89160))
+* Recommend globally installed tox instead of poetry installed tox ([#223](https://github.com/daquintero/autodoc_pydantic/issues/223)) ([204f246](https://github.com/daquintero/autodoc_pydantic/commit/204f24669d643505edb7be4acf07a856948e5027))
+* Remove pydantic v1/v2 branch note from developer setup guide ([204f246](https://github.com/daquintero/autodoc_pydantic/commit/204f24669d643505edb7be4acf07a856948e5027))
+* update .all-contributorsrc [skip ci] ([7230e13](https://github.com/daquintero/autodoc_pydantic/commit/7230e13bbec7c88ede472b46f5f763267ad91eee))
+* update .all-contributorsrc [skip ci] ([5b718d7](https://github.com/daquintero/autodoc_pydantic/commit/5b718d7c1b6b0feb06dc96ed1cd034a4126d8dc0))
+* update .all-contributorsrc [skip ci] ([4cf7258](https://github.com/daquintero/autodoc_pydantic/commit/4cf7258be6a7420babe8dd5aa63266f4f9713e1e))
+* update .all-contributorsrc [skip ci] ([9514ff0](https://github.com/daquintero/autodoc_pydantic/commit/9514ff07e875a33bb31d6b5981dcad986d244c3e))
+* update .all-contributorsrc [skip ci] ([2826bc9](https://github.com/daquintero/autodoc_pydantic/commit/2826bc9c0417e263b3c463ae2c33a31565abf085))
+* update .all-contributorsrc [skip ci] ([2064f09](https://github.com/daquintero/autodoc_pydantic/commit/2064f09cc76595512d70aa7b1b1dcecdeca19092))
+* update .all-contributorsrc [skip ci] ([1834e3e](https://github.com/daquintero/autodoc_pydantic/commit/1834e3eca329dbcfff95f3d990f0a4a00b0256b8))
+* update .all-contributorsrc [skip ci] ([6c6bb0f](https://github.com/daquintero/autodoc_pydantic/commit/6c6bb0fe3b69b23a1f5fa107739ed10ab92fdca5))
+* update .all-contributorsrc [skip ci] ([96b47bc](https://github.com/daquintero/autodoc_pydantic/commit/96b47bcedb0ce4ec59e7bc0d1a8f291cd4efb91c))
+* update .all-contributorsrc [skip ci] ([6b5af94](https://github.com/daquintero/autodoc_pydantic/commit/6b5af94d5260ba52a22c3ed23f8111cf351257b2))
+* update .all-contributorsrc [skip ci] ([6e56479](https://github.com/daquintero/autodoc_pydantic/commit/6e56479c23241584d9090ac1e607dd8d0856fec0))
+* update .all-contributorsrc [skip ci] ([e5fde22](https://github.com/daquintero/autodoc_pydantic/commit/e5fde2222a28b3e7ea8755281cd353ca9d531b7a))
+* update .all-contributorsrc [skip ci] ([cfbfbf8](https://github.com/daquintero/autodoc_pydantic/commit/cfbfbf8413fb278d0b5af34aef64c3a1036d630f))
+* update .all-contributorsrc [skip ci] ([598579c](https://github.com/daquintero/autodoc_pydantic/commit/598579c51bd584cad94f58c1bfebf8901bab0013))
+* update .all-contributorsrc [skip ci] ([aca3dcb](https://github.com/daquintero/autodoc_pydantic/commit/aca3dcb472e7bf48ff39d4abbab30d90f39f4248))
+* update .all-contributorsrc [skip ci] ([a87455f](https://github.com/daquintero/autodoc_pydantic/commit/a87455f43c0c43dba19c7f49ecba099b7cc56a7a))
+* update .all-contributorsrc [skip ci] ([9755852](https://github.com/daquintero/autodoc_pydantic/commit/97558522dd0e4f3ad603ef29227ed6939a436774))
+* update .all-contributorsrc [skip ci] ([4244f63](https://github.com/daquintero/autodoc_pydantic/commit/4244f63058888fb0e4a353a6ddffa56edb95f5cf))
+* update .all-contributorsrc [skip ci] ([6f21690](https://github.com/daquintero/autodoc_pydantic/commit/6f21690c11a7e97199ade8082a08a97bcd24a539))
+* update .all-contributorsrc [skip ci] ([5bee7a8](https://github.com/daquintero/autodoc_pydantic/commit/5bee7a84a363b02d90fbf8adc8f6b25636979988))
+* update .all-contributorsrc [skip ci] ([58b7591](https://github.com/daquintero/autodoc_pydantic/commit/58b7591fcfba253ebed5563803e9f5e6e2ae276c))
+* update .all-contributorsrc [skip ci] ([21ce6a8](https://github.com/daquintero/autodoc_pydantic/commit/21ce6a8810d560acef6dd042c60dfeda2fa27f5d))
+* update .all-contributorsrc [skip ci] ([e4c795d](https://github.com/daquintero/autodoc_pydantic/commit/e4c795d991850728481f2c535e380656b3654ffb))
+* update .all-contributorsrc [skip ci] ([46fbdec](https://github.com/daquintero/autodoc_pydantic/commit/46fbdec67b5b3564fd995749843113b88e41df82))
+* update .all-contributorsrc [skip ci] ([4a1af58](https://github.com/daquintero/autodoc_pydantic/commit/4a1af58438c35e2ee7cc614ed820829ccf9469a9))
+* update .all-contributorsrc [skip ci] ([704dbae](https://github.com/daquintero/autodoc_pydantic/commit/704dbae2fa0b6a5a6bf51b10c6cf4d889c9bbc5e))
+* update .all-contributorsrc [skip ci] ([9ff10b4](https://github.com/daquintero/autodoc_pydantic/commit/9ff10b4be866e122f4f07353f406bd7101493322))
+* update .all-contributorsrc [skip ci] ([a4fdeb7](https://github.com/daquintero/autodoc_pydantic/commit/a4fdeb74e19eebb6e542063eed3662cdb94ceeb1))
+* update .all-contributorsrc [skip ci] ([14bdb7c](https://github.com/daquintero/autodoc_pydantic/commit/14bdb7cb0de3ec27d366b0d805a9eb4c25f5432c))
+* update README.md [skip ci] ([5791e9d](https://github.com/daquintero/autodoc_pydantic/commit/5791e9ddfe5aa3a4c11270a6171b66d05f621275))
+* update README.md [skip ci] ([786a125](https://github.com/daquintero/autodoc_pydantic/commit/786a1251c00905c87e9efec51a25dc0051bcd0f3))
+* update README.md [skip ci] ([475f0c6](https://github.com/daquintero/autodoc_pydantic/commit/475f0c6096da3f263a31987909f97f43f8a7fdfa))
+* update README.md [skip ci] ([6a6d525](https://github.com/daquintero/autodoc_pydantic/commit/6a6d52502b6b026cade157d3aebbc430a153b91b))
+* update README.md [skip ci] ([bd2347a](https://github.com/daquintero/autodoc_pydantic/commit/bd2347aa9f034295aa21f04f5da9566119423f9f))
+* update README.md [skip ci] ([22232ff](https://github.com/daquintero/autodoc_pydantic/commit/22232ff4a0e70e6bc036a08bb4b15ccc793c7e03))
+* update README.md [skip ci] ([d17aeea](https://github.com/daquintero/autodoc_pydantic/commit/d17aeea6f191c96f9b324f7a78a50b4c70fa4acc))
+* update README.md [skip ci] ([4d45217](https://github.com/daquintero/autodoc_pydantic/commit/4d45217a1852270b6e4a0b685bbd0c2f5b9eb597))
+* update README.md [skip ci] ([bfb7c66](https://github.com/daquintero/autodoc_pydantic/commit/bfb7c66593dc34963b52665dc5b9b790e201d26a))
+* update README.md [skip ci] ([ecf3609](https://github.com/daquintero/autodoc_pydantic/commit/ecf3609ff4ed3bf29c5e6928fd34e1b58d1f84b1))
+* update README.md [skip ci] ([f269e4a](https://github.com/daquintero/autodoc_pydantic/commit/f269e4a44e8347ada6621c20d4657de076a97cc6))
+* update README.md [skip ci] ([6dca0da](https://github.com/daquintero/autodoc_pydantic/commit/6dca0da62933fe245bf603e00e90d5a2c452f228))
+* update README.md [skip ci] ([b76f8f8](https://github.com/daquintero/autodoc_pydantic/commit/b76f8f8339801e5017524a9e11f9cb0a658d11a5))
+* update README.md [skip ci] ([024b0c6](https://github.com/daquintero/autodoc_pydantic/commit/024b0c6e8db0340eff6c3a642007deff69c26434))
+* update README.md [skip ci] ([e745537](https://github.com/daquintero/autodoc_pydantic/commit/e745537af7fec99fdfc54c6d9a42487c798df1bf))
+* update README.md [skip ci] ([02c81d1](https://github.com/daquintero/autodoc_pydantic/commit/02c81d1e1263a97656f1ab7474dcceba7747e384))
+* update README.md [skip ci] ([33629ec](https://github.com/daquintero/autodoc_pydantic/commit/33629ece29594ec442cb363c9cb885dc36b8809a))
+* update README.md [skip ci] ([5c0f7ef](https://github.com/daquintero/autodoc_pydantic/commit/5c0f7efdffb8a78196dcfc7af171dcdf468aa52d))
+* update README.md [skip ci] ([21f1f30](https://github.com/daquintero/autodoc_pydantic/commit/21f1f30b4a3d94e5ea0429a245ce56f4cdb462c0))
+* update README.md [skip ci] ([ee1f248](https://github.com/daquintero/autodoc_pydantic/commit/ee1f2483431ce65978861a7023badfedc3b28e34))
+* update README.md [skip ci] ([526a25f](https://github.com/daquintero/autodoc_pydantic/commit/526a25f97bf33063980cedc16381dac14bb156f0))
+* update README.md [skip ci] ([3ab1386](https://github.com/daquintero/autodoc_pydantic/commit/3ab13865e26daee134505afa464b4f084e296e32))
+* update README.md [skip ci] ([9aecfc7](https://github.com/daquintero/autodoc_pydantic/commit/9aecfc7a91349e541dab605027e79f5901159fe7))
+* update README.md [skip ci] ([9170326](https://github.com/daquintero/autodoc_pydantic/commit/9170326e0cf6bfc0e7208c012f2c592d1d0378df))
+* update README.md [skip ci] ([69e3afd](https://github.com/daquintero/autodoc_pydantic/commit/69e3afdd8ebf14092a26281b3cd6d6edd9a654ed))
+* update README.md [skip ci] ([e7870db](https://github.com/daquintero/autodoc_pydantic/commit/e7870dbd21daa107d9356719e1f76db818ea9fde))
+* update README.md [skip ci] ([e567ef4](https://github.com/daquintero/autodoc_pydantic/commit/e567ef4e42fadf47268fad396e252d4e029fb480))
+* update README.md [skip ci] ([7f75fd8](https://github.com/daquintero/autodoc_pydantic/commit/7f75fd858e97314d6f3337c69d2564d28a7c7923))
+
+
+### 🚀 CI/CD Pipeline
+
+* Ignore release-please branches for CI tests ([#221](https://github.com/daquintero/autodoc_pydantic/issues/221)) ([5f4c0dc](https://github.com/daquintero/autodoc_pydantic/commit/5f4c0dc46f55c9935e2de6645a93738f14b094a1))
+* Move publish step into release-please workflow ([#237](https://github.com/daquintero/autodoc_pydantic/issues/237)) ([0864395](https://github.com/daquintero/autodoc_pydantic/commit/0864395bf15750e5a514a7feac7b1c65f8875a5c))
+* Protect workflows via CODEOWNERS and explicit user matching ([#240](https://github.com/daquintero/autodoc_pydantic/issues/240)) ([c07d1f2](https://github.com/daquintero/autodoc_pydantic/commit/c07d1f2223897d2fa5983423bbe73ac73a624fee))
+* Update codcov GH action to newest version ([#219](https://github.com/daquintero/autodoc_pydantic/issues/219)) ([b129602](https://github.com/daquintero/autodoc_pydantic/commit/b1296028cc98f9b630c163e1483eed01d6011077))
+* Update GH Actions to newest Versions ([#222](https://github.com/daquintero/autodoc_pydantic/issues/222)) ([5a21c2a](https://github.com/daquintero/autodoc_pydantic/commit/5a21c2a2211153d0b914b47d3fa4213741d1e9d5))
+
 ## v2.1.0 - 2024-03-18
 
 This is a maintenance and bugfix release extending support to pydantic
